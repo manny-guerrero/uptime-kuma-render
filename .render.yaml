@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: uptime-kuma
+    env: docker
+    plan: free
+    docker:
+      dockerfilePath: Dockerfile
+    port: 3001
+    envVars:
+      - key: PORT
+        value: 3001
